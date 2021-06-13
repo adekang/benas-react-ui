@@ -1,21 +1,30 @@
 import React from 'react';
 import Menu from './menu';
 import MenuItem from './menuItem';
+import SubMenu from './subMenu';
 
 function ButtonDemo() {
   return (
     <div>
       <h1>Menu组件</h1>
-      <Menu defaultIndex={0}>
-        <MenuItem index={0}>
+      <Menu defaultIndex="0">
+        <MenuItem>
           cool menu
         </MenuItem>
-        <MenuItem index={1}>
+        <MenuItem>
           cool menu
         </MenuItem>
-        <MenuItem index={2}>
+        <MenuItem>
           cool menu
         </MenuItem>
+        <SubMenu title="下拉菜单">
+          <MenuItem>
+            cool menu
+          </MenuItem>
+          <MenuItem>
+            cool menu
+          </MenuItem>
+        </SubMenu>
       </Menu>
     </div>
   );
