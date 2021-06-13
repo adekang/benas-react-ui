@@ -9,7 +9,7 @@ function IconDemo() {
   return (
     <div>
       <h1>Icon组件</h1>
-      <Icon icon="coffee" theme="danger" size="10x"/>
+      <Icon icon="coffee" theme="primary" size="10x"/>
     </div>
   );
 }
