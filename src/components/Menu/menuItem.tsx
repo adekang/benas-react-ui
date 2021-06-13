@@ -22,7 +22,6 @@ const MenuItem: React.FC<MenuItemProps> = (props) => {
     if (context.onSelect && !disabled && (typeof index === 'string')) {
       context.onSelect(index);
     }
-    alert(index);
   };
   return (
     <li className={classes} style={style} onClick={handleClick}>
