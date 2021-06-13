@@ -7,7 +7,7 @@ function ButtonDemo() {
   return (
     <div>
       <h1>Menu组件</h1>
-      <Menu defaultIndex="0">
+      <Menu defaultIndex="0" mode={'vertical'}>
         <MenuItem>
           cool menu
         </MenuItem>
