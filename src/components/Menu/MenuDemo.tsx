@@ -8,13 +8,13 @@ function ButtonDemo() {
       <h1>Menu组件</h1>
       <Menu defaultIndex={0}>
         <MenuItem index={0}>
-          cool
+          cool menu
         </MenuItem>
         <MenuItem index={1}>
-          cool
+          cool menu
         </MenuItem>
         <MenuItem index={2}>
-          cool
+          cool menu
         </MenuItem>
       </Menu>
     </div>
