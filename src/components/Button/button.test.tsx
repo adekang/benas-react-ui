@@ -1,13 +1,13 @@
 import React from 'react';
 import {fireEvent, render} from '@testing-library/react';
-import Button, {ButtonProps, ButtonSize, ButtonType} from './button';
+import Button, {ButtonProps} from './button';
 
 const defaultProps = {
   onClick: jest.fn()
 };
 const testProps: ButtonProps = {
-  btnType: ButtonType.Primary,
-  size: ButtonSize.Small,
+  btnType: 'primary',
+  size: 'sm',
   className: 'class'
 };
 const disabledProps: ButtonProps = {
@@ -33,7 +33,7 @@ describe('test Button component', () => {
     expect(element).toHaveClass('btn-primary btn-sm class');
   });
   it('link button', () => {
-    const wrapper = render(<Button btnType={ButtonType.Link} href="http://url">Link</Button>);
+    const wrapper = render(<Button btnType="link" href="http://url">Link</Button>);
     const element = wrapper.getByText('Link');
     expect(element.tagName).toEqual('A');
     expect(element).toBeInTheDocument();

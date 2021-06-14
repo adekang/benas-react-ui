@@ -1,5 +1,5 @@
 import React from 'react';
-import Button, {ButtonSize, ButtonType} from './button';
+import Button from './button';
 
 function ButtonDemo() {
   return (
@@ -7,19 +7,19 @@ function ButtonDemo() {
       <h1>Button组件</h1>
       <Button>Hello</Button>
       <Button disabled>Hello</Button>
-      <Button btnType={ButtonType.Primary} size={ButtonSize.Large}>Hello</Button>
-      <Button btnType={ButtonType.Default} size={ButtonSize.Large}>Hello</Button>
-      <Button btnType={ButtonType.Danger} size={ButtonSize.Large}>Hello</Button>
-      <Button btnType={ButtonType.Primary}>Hello</Button>
-      <Button btnType={ButtonType.Default}>Hello</Button>
-      <Button btnType={ButtonType.Danger}>Hello</Button>
-      <Button btnType={ButtonType.Primary} size={ButtonSize.Small}>Hello</Button>
-      <Button btnType={ButtonType.Default} size={ButtonSize.Small}>Hello</Button>
-      <Button btnType={ButtonType.Danger} size={ButtonSize.Small}>Hello</Button>
-      <Button btnType={ButtonType.Link} size={ButtonSize.Large} href={'www.baidu.com'}>Hello</Button>
-      <Button btnType={ButtonType.Link} href={'www.baidu.com'}>Hello</Button>
-      <Button btnType={ButtonType.Link} size={ButtonSize.Small} href={'www.baidu.com'} target="_blank">Hello</Button>
-      <Button btnType={ButtonType.Link} size={ButtonSize.Small} href={'www.baidu.com'} disabled>Hello</Button>
+      <Button btnType="primary" size="lg">Hello</Button>
+      <Button btnType="default" size="lg">Hello</Button>
+      <Button btnType="danger" size="lg">Hello</Button>
+      <Button btnType="primary">Hello</Button>
+      <Button btnType="default">Hello</Button>
+      <Button btnType="danger">Hello</Button>
+      <Button btnType="primary" size="sm">Hello</Button>
+      <Button btnType="default" size="sm">Hello</Button>
+      <Button btnType="danger" size="sm">Hello</Button>
+      <Button btnType="link" size="lg" href={'www.baidu.com'}>Hello</Button>
+      <Button btnType="link" href={'www.baidu.com'}>Hello</Button>
+      <Button btnType="link" size="sm" href={'www.baidu.com'} target="_blank">Hello</Button>
+      <Button btnType="link" size="sm" href={'www.baidu.com'} disabled>Hello</Button>
     </div>
   );
 }
