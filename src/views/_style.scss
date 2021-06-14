@@ -1,0 +1,30 @@
+.beans-wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+
+  .beans-nav {
+    box-shadow: inset 0 10px 0 rgba(#fff, .15), 2px 0 7px rgba(#000, .075);
+    padding-top: 25px;
+    > ul {
+      list-style: none;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      > li {
+        font-weight: 600;
+        height: 40px;
+        line-height: 40px;
+        font-size: 20px;
+      }
+    }
+
+    width: 250px;
+  }
+
+  .beans-container {
+    flex-grow: 1;
+    padding: 25px;
+  }
+}
